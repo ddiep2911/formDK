@@ -28,7 +28,7 @@ function checkError() {
 
     // name 
     if (hoTen == "") {
-        showError("username", "Họ tên không được để trống!")
+        showError("username", "Bắt buộc*")
     } else if (!regexName.test(hoTen)) {
         showError("username", "Họ tên chưa đúng định dạng!")
     } else {
@@ -37,7 +37,7 @@ function checkError() {
 
     // email 
     if (email == "") {
-        showError("email", "Email không được để trống!")
+        showError("email", "Bắt buộc*")
     } else if (!regexEmail.test(email)) {
         showError("email", "Emai chưa đúng định dạng!")
     } else {
@@ -46,7 +46,7 @@ function checkError() {
 
     // error passWord 
     if (passWord == "") {
-        showError("password", "Mật khẩu không được để trống!")
+        showError("password", "Bắt buộc*")
     } else if (!regexPassWord.test(passWord)) {
         showError("password", "Tối thiểu tám ký tự, ít nhất một chữ cái viết hoa, một chữ cái viết thường")
     } else {
@@ -54,7 +54,7 @@ function checkError() {
     }
 
     if (rePassWOrd == "") {
-        showError("repassword", "Mật khẩu không được để trống!")
+        showError("repassword", "Bắt buộc*")
     } else if (rePassWOrd != passWord) {
         showError("repassword", "Mật khẩu nhập lại chưa khớp!")
     } else {
